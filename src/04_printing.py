@@ -12,6 +12,22 @@ z = "I like turtles!"
 # y, and z:
 # x is 10, y is 2.25, z is "I like turtles!"
 
+"""
+'%.2f' % y shows 2 decimals
+"""
+print('x is %d, y is %.2f, z is "%s"'%(x,y,z))
+
 # Use the 'format' string method to print the same thing
 
+"""
+"{0:.2f}".format(y) shows 2 decimals
+"""
+print('x is', x, ',y is', "{0:.2f}".format(y), ',z is', '"'+z+'"')
+
 # Finally, print the same thing using an f-string
+
+"""
+{} show the values in the same order that are defined in
+.format()
+"""
+print('x is {} ,y is {} ,z is "{}"'.format(x, "{0:.2f}".format(y), z))

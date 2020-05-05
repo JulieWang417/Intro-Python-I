@@ -35,10 +35,26 @@ print("Distance is: {:.2f}".format(dist(a, b)))
 # Write a function `print_tuple` that prints all the values in a tuple
 
 # YOUR CODE HERE
+def print_tuple(tupl):
+    for x in tupl:
+        print(x)
+
+
 
 t = (1, 2, 5, 7, 99)
 print_tuple(t)  # Prints 1 2 5 7 99, one per line
 
 # Declare a tuple of 1 element then print it
-u = (1)  # What needs to be added to make this work?
+"""
+Using u(1) we have this error:
+TypeError: 'int' object is not iterable
+"""
+
+u = (1,)  # What needs to be added to make this work?
+
+"""
+To write a tuple with a single element
+we have to include a comma after the element
+"""
+
 print_tuple(u)
